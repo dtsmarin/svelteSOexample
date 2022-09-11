@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "cSpell.ignoreWords": [
+    "Typecheck",
+    "ondoubletap",
+    "onpandown",
+    "onpanstart",
+    "onpanup",
+    "ontap",
+    "sveltejs"
+  ]
+  }
