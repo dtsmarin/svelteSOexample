@@ -3,5 +3,12 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()]
+  plugins: [svelte()],
+  server: {
+    origin: 'http://localhost:3000/frontend/',
+    host: '0.0.0.0',
+    fs: {
+      strict: true,
+    },
+  },
 })

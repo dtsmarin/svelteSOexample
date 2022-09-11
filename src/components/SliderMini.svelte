@@ -61,10 +61,10 @@
       <div class="label">{yText}</div>
     </div>
   </Motion>
-  <div class="sliderbar" style="--minvalue:{map(slidebarvalue, 113, -113, 50, 275)}px;  background-color:{color}" />
+  <div class="sliderbar" style="--minvalue:{map(slidebarvalue, 113, -113, 52, 278)}px;  background-color:{color}" />
   <div
     class="defaultpip"
-    style="--startpip:{map(value, 0, 127, 20, 245)}px"
+    style="--startpip:{map(value, 0, 127, 20, 248)}px"
     use:svelteHammer.tap={{ event: 'tap', taps: 1 }}
     on:click={() => {
       handleTap(index)
@@ -119,7 +119,7 @@
     z-index: 1;
     position: absolute;
     width: 70px;
-    border-radius: 8px 8px 6px 6px;
+    border-radius: 8px 8px 7px 7px;
     opacity: 0.25;
     bottom: 0px;
     height: var(--minvalue);
@@ -130,13 +130,13 @@
     z-index: 1;
     position: absolute;
     width: 35px;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 0px 5px 5px 0px;
     border: 1px solid black;
-    border-right: 0;
+    border-left: 0;
     opacity: 0.25;
     background-color: green;
     bottom: var(--startpip);
-    left: 50%;
+    right: 48%;
     height: 10px;
   }
   .box > .label {

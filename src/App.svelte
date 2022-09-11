@@ -1,12 +1,14 @@
 <script>
   import SliderMini from './components/SliderMini.svelte'
+  import SliderDiy from './components/SliderDIY.svelte'
   import faders from './ccdata'
 </script>
 
 <div class="fadergrid">
   {#each faders as { cc, n, range, init, clr }, i}
     {#if cc != undefined}
-      <SliderMini value={init} controller={cc} name={n} color={clr} index={i} />
+      <SliderDiy height={500} width={80} />
+      <!-- <SliderMini value={init} controller={cc} name={n} color={clr} index={i} /> -->
     {/if}
   {/each}
 </div>
